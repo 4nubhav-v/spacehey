@@ -1,0 +1,330 @@
+<style>
+  body {
+    width: 100vw;
+    height: 100vh;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: black;
+    z-index: -1;
+    box-sizing: border-box;
+    font-size: 1.2em;
+  }
+
+  main {
+    background: black;
+    color: #8eeab8;
+    border-left: 2px dotted #61bc86;
+    border-right: 2px dotted #61bc86;
+  }
+  .logo {
+    filter: sepia(100%) hue-rotate(45deg) saturate(10);
+  }
+  .details-table td:first-child {
+    width: 20%;
+  }
+  #q,
+  button {
+    color: #8eeab8;
+    background-color: black;
+    border: 1px solid #8eeab8;
+    font-family: inherit;
+  }
+  p,
+  i,
+  b,
+  .count {
+    color: #8eeab8;
+  }
+  a {
+    text-decoration: none !important;
+    &:hover {
+      text-shadow: 0 0 10px #8eeab8;
+      color: #8eeab8;
+    }
+  }
+  a,
+  .profile .friends .person p,
+  .logout-btn {
+    color: #8eeab8;
+    text-decoration: none;
+  }
+  .profile .friends .inner {
+    padding: 20px;
+  }
+  .table-section,
+  .blurbs,
+  .friends {
+    box-shadow: 5px 5px 0 #8eeab8;
+  }
+  .container {
+    width: 85%;
+    margin: 0 auto 0;
+    box-shadow: 0 0 100px #8eeab8;
+    animation: pdg_flicker_main 1.5s infinite alternate;
+  }
+  @keyframes pdg_flicker_main {
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+      box-shadow:
+        -0.2rem -0.2rem 1rem #8eeab8,
+        0.2rem 0.2rem 1rem #8eeab8,
+        0 0 2rem #8eeab8,
+        0 0 4rem #8eeab8,
+        0 0 6rem #8eeab8,
+        0 0 8rem #8eeab8,
+        0 0 10rem #8eeab8;
+    }
+    20%,
+    24%,
+    55% {
+      text-shadow: none;
+      box-shadow: none;
+    }
+  }
+  .col.w-40 {
+    width: 80%;
+  }
+  .contact {
+    box-shadow: 5px 5px 0 #8eeab8;
+  }
+  .contact .inner {
+    background-image: url(https://i.pinimg.com/originals/dc/71/f7/dc71f74b0022f3b14393a44a38c36e73.gif);
+    background-size: cover;
+  }
+  .url-info {
+    display: none;
+  }
+  .profile .url-info {
+    padding: 20px;
+  }
+  .profile .blurbs .inner {
+    padding: 20px;
+  }
+  .inner {
+    padding: 20px;
+    text-align: center;
+  }
+  .icon {
+    display: none;
+  }
+  nav {
+    color: #8eeab8;
+    text-align: center;
+  }
+  nav .links {
+    background: linear-gradient(
+      360deg,
+      rgb(111, 222, 155) 0,
+      rgb(16, 122, 59) 31%,
+      rgb(0, 0, 0) 100%
+    ) !important;
+  }
+  nav .links a {
+    color: #8eeab8;
+  }
+  nav .links a:hover {
+    text-shadow: 0 0 8px #8eeab8;
+    color: #8eeab8;
+  }
+  nav .top {
+    padding: 25px 25px 25px 25px;
+    margin-top: 2px;
+    background: 0;
+    background-color: black;
+    border: 2px dotted #8eeab8;
+    border-bottom: 0;
+    background-image: url(https://i.postimg.cc/SQPYzN91/test.gif) !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  nav .links {
+    background-color: black;
+    border: 2px solid #61bc86;
+  }
+  .heading,
+  .url-info {
+    color: #61bc86 !important;
+    background-color: black !important;
+    border: 2px solid #61bc86 !important;
+  }
+  .inner {
+    color: #61bc86 !important;
+    border: 2px dotted #61bc86;
+  }
+  .profile-info {
+    border: 2px solid #61bc86;
+  }
+  .profile-info .inner {
+    border: 0;
+  }
+  .friends .inner {
+    border-bottom: 0;
+  }
+  #comments {
+    font-size: 0.8em;
+    border-bottom: 2px dotted #61bc86;
+  }
+  #hero {
+    filter: grayscale(100%) blur(2px) saturate(100%);
+    transition: filter 400ms ease-in-out;
+    &:hover {
+      filter: none;
+      transition: filter 400ms ease-in-out;
+    }
+  }
+  .profile .contact,
+  .profile .table-section,
+  .home-actionmm {
+    border: none !important;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+  }
+  .profile .contact .f-row:first-of-type {
+    margin-top: 0;
+    padding-top: 7px;
+  }
+  .profile .blurbs .section h4 {
+    color: #61bc86 !important;
+  }
+  .details-table {
+    margin: 2px;
+  }
+  .details-table,
+  td {
+    border: 1px solid #61bc86;
+    border-collapse: collapse;
+  }
+  td {
+    color: #61bc86 !important;
+    background: 0;
+    background-color: black !important;
+    text-align: center;
+  }
+  table.details-table {
+    max-width: 98%;
+  }
+  .profile h1 {
+    color: red;
+    font-size: 2.5em;
+    animation: pdg_flicker 1.5s infinite alternate;
+  }
+  @keyframes pdg_flicker {
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+      text-shadow:
+        -0.2rem -0.2rem 1rem red,
+        0.2rem 0.2rem 1rem red,
+        0 0 2rem red,
+        0 0 4rem red,
+        0 0 6rem red,
+        0 0 8rem red,
+        0 0 10rem red;
+    }
+    20%,
+    24%,
+    55% {
+      text-shadow: none;
+      box-shadow: none;
+    }
+  }
+  footer {
+    background: black;
+    border: 2px dotted #61bc86;
+  }
+  footer p {
+    color: #61bc86 !important;
+  }
+  .comments-table {
+    border: 0;
+    border-collapse: collapse;
+    filter: grayscale(100%) blur(2px) saturate(100%);
+    transition: filter 400ms ease-in-out;
+    &:hover {
+      filter: none;
+      transition: filter 400ms ease-in-out;
+    }
+  }
+  .comment-replies {
+    border: 1px solid #61bc86;
+    margin: 2px;
+  }
+  nav .info {
+    background: 0;
+  }
+  tbody tr td:nth-of-type(2) p {
+    color: #61bc86 !important;
+  }
+  .url-info:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes shake {
+    0% {
+      transform: translate(1px, 1px) rotate(0);
+    }
+    10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+      transform: translate(-3px, 0) rotate(1deg);
+    }
+    30% {
+      transform: translate(3px, 2px) rotate(0);
+    }
+    40% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+      transform: translate(-3px, 1px) rotate(0);
+    }
+    70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+      transform: translate(1px, 2px) rotate(0);
+    }
+    100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+    }
+  }
+  @keyframes rgb {
+    0% {
+      color: red;
+      text-shadow: 0 0 10px red;
+    }
+    33% {
+      color: #8eeab8;
+      text-shadow: 0 0 10px #8eeab8;
+    }
+    66% {
+      color: blue;
+      text-shadow: 0 0 10px blue;
+    }
+    100% {
+      color: red;
+      text-shadow: 0 0 10px red;
+    }
+  }
+</style>
