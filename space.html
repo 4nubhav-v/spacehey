@@ -1,5 +1,5 @@
 <style>
-/* Feel to copy any code nerd*/
+  /* Feel to copy any code nerd*/
 
 
   @import url("https://external-media.spacehey.net/css/st0i9EpNx1K-BzrXzHLhFMfuMmbKFAIn126z1PUx5cgQ=/https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
@@ -11,6 +11,7 @@
     --headingColor1: hsl(0, 0, 0, 0);
     --headingColor2: blue;
   }
+
   body:before {
     content: "";
     height: 100vh;
@@ -25,11 +26,13 @@
     background-position: center;
     pointer-events: none;
   }
+
   @keyframes fade-in-bottom {
     0% {
       transform: translateY(50px);
       opacity: 0;
     }
+
     100% {
       transform: translateY(0);
       opacity: 1;
@@ -42,9 +45,9 @@
     font-style: normal;
     background-color: var(--bgColors) !important;
     z-index: -1;
-    font-size: 1em;
+    font-size: 1.2em;
     user-select: none;
-    background-image: url(https://i.pinimg.com/736x/8b/1b/41/8b1b41a1fc27545c7e980169997f92d8.jpg);
+    background-image: url(https://i.ibb.co/7xVCmNKb/8b1b41a1fc27545c7e980169997f92d8.webp);
     background-attachment: fixed;
     animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   }
@@ -79,13 +82,16 @@
     background: var(--bgColors) !important;
     color: var(--fg2Colors) !important;
   }
+
   .container {
     box-shadow: 0px 0px 100px black;
     background-image: url(https://i.pinimg.com/736x/c4/c1/19/c4c1192632bae95b5af41c71214e1c3e.jpg);
   }
+
   .blurbs {
     animation: 10s linear 0s infinite alternate rotate;
   }
+
   /* Status */
   .general-about .details {
     animation: 10s linear 0s infinite alternate antirotate;
@@ -124,8 +130,7 @@
     color: var(--headingColor2);
     text-shadow: 0 0 10px var(--headingColor2) !important;
     cursor:
-      url("https://external-media.spacehey.net/media/spmGcOeHyNO6Xh-88RKoQw1nNMbi9AWMl1XQVGuS2Fv4=/https://cdn.cursors-4u.net/previews/the-infamous-middle-finger-ed11cdae-32.webp")
-        43 43,
+      url("https://external-media.spacehey.net/media/spmGcOeHyNO6Xh-88RKoQw1nNMbi9AWMl1XQVGuS2Fv4=/https://cdn.cursors-4u.net/previews/the-infamous-middle-finger-ed11cdae-32.webp") 43 43,
       auto !important;
   }
 
@@ -133,8 +138,7 @@
     color: var(--headingColor2);
     text-shadow: 0 0 10px var(--headingColor2) !important;
     cursor:
-      url("https://external-media.spacehey.net/media/spmGcOeHyNO6Xh-88RKoQw1nNMbi9AWMl1XQVGuS2Fv4=/https://cdn.cursors-4u.net/previews/the-infamous-middle-finger-ed11cdae-32.webp")
-        43 43,
+      url("https://external-media.spacehey.net/media/spmGcOeHyNO6Xh-88RKoQw1nNMbi9AWMl1XQVGuS2Fv4=/https://cdn.cursors-4u.net/previews/the-infamous-middle-finger-ed11cdae-32.webp") 43 43,
       auto !important;
   }
 
@@ -187,33 +191,29 @@
     animation-timing-function: ease-in-out;
   }
 
-  .col.w-40 > .contact > .heading,
-  .col.w-40 > .table-section > .heading {
+  .col.w-40>.contact>.heading,
+  .col.w-40>.table-section>.heading {
     display: flex;
     justify-content: end;
-    background: linear-gradient(
-      90deg,
-      rgba(111, 222, 155, 1) 0,
-      rgba(16, 122, 59, 1) 31%,
-      rgba(0, 0, 0, 1) 100%
-    ) !important;
+    background: linear-gradient(90deg,
+        rgba(111, 222, 155, 1) 0,
+        rgba(16, 122, 59, 1) 31%,
+        rgba(0, 0, 0, 1) 100%) !important;
   }
 
-  .col.w-40 > .table-section {
+  .col.w-40>.table-section {
     box-shadow: -5px 5px 0 var(--fg2Colors);
     animation: 10s linear 0s infinite alternate rotate;
   }
 
-  .col.right > .blurbs > .heading {
-    background: linear-gradient(
-      270deg,
-      rgba(111, 222, 155, 1) 0,
-      rgba(16, 122, 59, 1) 31%,
-      rgba(0, 0, 0, 1) 100%
-    ) !important;
+  .col.right>.blurbs>.heading {
+    background: linear-gradient(270deg,
+        rgba(111, 222, 155, 1) 0,
+        rgba(16, 122, 59, 1) 31%,
+        rgba(0, 0, 0, 1) 100%) !important;
   }
 
-  .col.right > blurbs {
+  .col.right>blurbs {
     box-shadow: 5px 5px 0 var(--fg2Colors);
   }
 
@@ -232,6 +232,7 @@
   .profile .url-info {
     padding: 20px;
   }
+
   .profile .blurbs {
     transform: rotate(-5deg);
   }
@@ -298,6 +299,7 @@
   .profile-info .inner {
     border: 0;
   }
+
   .friends {
     animation: 10s linear 0s infinite alternate antirotate;
   }
@@ -312,6 +314,7 @@
     transform: rotate(-5deg);
     animation: 10s linear 0s infinite alternate rotate;
   }
+
   .comment-replies {
     border: 1px solid var(--fg1Colors);
   }
@@ -334,6 +337,7 @@
   .row {
     padding: 15px;
   }
+
   .row .profile {
     backdrop-filter: blur(5px);
   }
@@ -422,6 +426,7 @@
     max-width: 150px;
     max-height: 150px;
   }
+
   /* IMG PFP */
   .profile-pic {
     height: 200px;
@@ -507,8 +512,32 @@
     color: var(--headingColor);
     animation: pdg_flicker 1.5s infinite alternate;
   }
+
   .contact {
     animation: 10s linear 0s infinite alternate rotate;
+  }
+
+  .contact:hover {
+    scale: 150%;
+  }
+
+  .my-details-table {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+
+  }
+
+  .my-details-table:hover {
+    scale: 150%;
+    z-index: 100;
+    position: absolute;
+    padding: 20px;
+    border: 4px solid var(--fg1Colors);
+    background-color: var(--bgColors);
+    left: 125px;
+    filter: drop-shadow(2px 2px 4px);
   }
 
   .contact .heading {
@@ -543,6 +572,7 @@
   }
 
   @keyframes pdg_flicker {
+
     0%,
     19%,
     21%,
@@ -568,7 +598,9 @@
       box-shadow: none;
     }
   }
+
   @keyframes pdg_flicker_main {
+
     0%,
     19%,
     21%,
@@ -640,6 +672,7 @@
       transform: translate(1px, -2px) rotate(-1deg);
     }
   }
+
   @keyframes float {
     0% {
       transform: translate(0, 0px);
@@ -658,14 +691,17 @@
     from {
       transform: rotate(5deg);
     }
+
     to {
       transform: rotate(-5deg);
     }
   }
+
   @keyframes antirotate {
     from {
       transform: rotate(-5deg);
     }
+
     to {
       transform: rotate(5deg);
     }
@@ -696,38 +732,30 @@
   }
 </style>
 <p>
-I love tech related stuff I love the modern society. I love the current
-government. I love how AI will lead this technology to diminish. I hope this
-fcking world blows up into ashes
+  I love tech related stuff I love the modern society. I love the current
+  government. I love how AI will lead this technology to diminish. I hope this
+  fcking world blows up into ashes
 </p>
 <br />
 <img
-  src="https://64.media.tumblr.com/99614f658d173c4314bb838520b20149/68fc51410d4c1c6a-45/s250x400/f405b02671531614b12b7897fe0042d9b1cc2ab1.gifv"
-/>
+  src="https://64.media.tumblr.com/99614f658d173c4314bb838520b20149/68fc51410d4c1c6a-45/s250x400/f405b02671531614b12b7897fe0042d9b1cc2ab1.gifv" />
 <img
-  src="https://64.media.tumblr.com/61db0499c943ec1d5a8e9e83841e098b/68fc51410d4c1c6a-5a/s250x400/897090367887dac290d63bebee74d15e70a3f56d.gifv"
-/>
+  src="https://64.media.tumblr.com/61db0499c943ec1d5a8e9e83841e098b/68fc51410d4c1c6a-5a/s250x400/897090367887dac290d63bebee74d15e70a3f56d.gifv" />
 <br />
 <p>
-my spacehey <a class="online" href="https://spacehey.com/anubhav">profile</a>
+  my spacehey <a class="online" href="https://spacehey.com/anubhav">profile</a>
 </p>
-<div
-  style="
+<div style="
     max-height: 300px;
     left: -560px;
     top: -200px;
     z-index: 200;
     filter: sepia(100%) hue-rotate(90deg) saturate(2);
-  "
->
-  <img
-    src="https://i.postimg.cc/8Pr6jP4Y/1754327481903568.gif"
-    width="100"
-    height="100"
-  />
+  ">
+  <img src="https://i.postimg.cc/8Pr6jP4Y/1754327481903568.gif" width="100" height="100" />
 </div>
 
-<ul style="text-align: left">
+<ul style="text-align: left" class="my-details-table">
   <li><a>Discord: </a><a style="user-select: all">xx_4nubhav_xx</a></li>
   <li>
     <a href="https://steamcommunity.com/id/4nubhav/" target="_blank">Steam</a>
@@ -739,17 +767,19 @@ my spacehey <a class="online" href="https://spacehey.com/anubhav">profile</a>
 </ul>
 
 <pre>
-⠀⠀⠀⠀⣠⣾⣿⣿⡿⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⢿⣿⣿⣶
-⠀⠀⠀⣴⣿⣿⠟⠁⠀⠀⠀⣶⣶⣶⣶⡆⠀⠀⠀⠀⠀⠀⠈⠻⣿⣿
-⠀⠀⣼⣿⣿⠋⠀⠀⠀⠀⠀⠛⠛⢻⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿
-⠀⢸⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿
-⠀⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿
-⠀⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⡟⢹⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⣹⣿⣿
-⠀⣿⣿⣷⠀⠀⠀⠀⠀⠀⣰⣿⣿⠏⠀⠀⢻⣿⣿⡄⠀⠀⠀⠀⠀⠀⣿⣿⡿
-⠀⢸⣿⣿⡆⠀⠀⠀⠀⣴⣿⡿⠃⠀⠀⠀⠈⢿⣿⣷⣤⣤⡆⠀⠀⣰⣿⣿
-⠀⠀⢻⣿⣿⣄⠀⠀⠾⠿⠿⠁⠀⠀⠀⠀⠀⠘⣿⣿⡿⠿⠛⠀⣰⣿⣿
-⠀⠀⠀⠻⣿⣿⣧⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⠏
-⠀⠀⠀⠀⠈⠻⣿⣿⣷⣤⣄⡀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣾⣿⣿⠟ 
+  ⠀⠀⠀⠀⣠⣾⣿⣿⡿⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⢿⣿⣿⣶
+  ⠀⠀⠀⣴⣿⣿⠟⠁⠀⠀⠀⣶⣶⣶⣶⡆⠀⠀⠀⠀⠀⠀⠈⠻⣿⣿
+  ⠀⠀⣼⣿⣿⠋⠀⠀⠀⠀⠀⠛⠛⢻⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿
+  ⠀⢸⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿
+  ⠀⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿
+  ⠀⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⡟⢹⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⣹⣿⣿
+  ⠀⣿⣿⣷⠀⠀⠀⠀⠀⠀⣰⣿⣿⠏⠀⠀⢻⣿⣿⡄⠀⠀⠀⠀⠀⠀⣿⣿⡿
+  ⠀⢸⣿⣿⡆⠀⠀⠀⠀⣴⣿⡿⠃⠀⠀⠀⠈⢿⣿⣷⣤⣤⡆⠀⠀⣰⣿⣿
+  ⠀⠀⢻⣿⣿⣄⠀⠀⠾⠿⠿⠁⠀⠀⠀⠀⠀⠘⣿⣿⡿⠿⠛⠀⣰⣿⣿
+  ⠀⠀⠀⠻⣿⣿⣧⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⠏
+  ⠀⠀⠀⠀⠈⠻⣿⣿⣷⣤⣄⡀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣾⣿⣿⠟
 </pre>
-<img src="https://images.steamusercontent.com/ugc/17823696434190666066/64A0560667700D4E87F4912B34D8B353348D28CB/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" style="filter: sepia(100%) hue-rotate(90deg) saturate(3);
+<img
+  src="https://images.steamusercontent.com/ugc/17823696434190666066/64A0560667700D4E87F4912B34D8B353348D28CB/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"
+  style="filter: sepia(100%) hue-rotate(90deg) saturate(3);
 ">
